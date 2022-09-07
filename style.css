@@ -13,10 +13,8 @@ body {
 
 #calculator {
     border: 2px solid;
-    padding: 14px;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #34568B;
-    background-color: #92A8D1;
     background-color: #39CCCC;
 }
 
@@ -27,27 +25,28 @@ body {
 }
 
 #screen {
-    width: 234px;
-    height: 64px;
+    width: 284px;
+    height: 84px;
     border: 2px solid;
-    font-size: 64px;
+    font-size: 84px;
     font-family: "Calculator";
     display: flex;
     justify-content: flex-end;
     align-items: center;
     border-radius: 10px;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     background-color: lightgrey;
+    padding-right: 4px;
 }
 
 .button {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     border: 2px solid;
     display: flex;
     justify-content: center;
     align-items: center; 
-    font-size: 30px;
+    font-size: 36px;
     border-radius: 10px;
     background-color: lightgrey;
 }
@@ -66,8 +65,10 @@ body {
     font-size: 30px;
 }
 
-.clear, .delete {
-    background-color: pink;
+.clear, .delete,
+.square-root, .add,
+.subtract, .multiply,
+.divide, .equals {
     background-color: #0074D9;
     color: white;
     border-color: black;

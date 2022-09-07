@@ -6,6 +6,7 @@ let resetScreen = false;
 function attachClickEvent(button) {
     let classes = button.classList.toString();
     let buttonType = classes.replace("button ", "");
+    button.addEventListener('click', transition);
     switch(buttonType) {
         case "add":
             button.addEventListener('click', () => operate('+'));
@@ -164,6 +165,10 @@ function addKeyboardInput(e) {
         case "a":
         case "A":
             clear();
+            break;
+        case "s":
+        case "S":
+            squareRoot();
             break;
         default:
             console.log(e.keyCode);

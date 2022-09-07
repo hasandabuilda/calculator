@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Calculator";
+    src: url("digital-7-font/Digital7-1e1Z.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+
+#calculator {
+    border: 2px solid;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #34568B;
+    background-color: #92A8D1;
+    background-color: #39CCCC;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#screen {
+    width: 234px;
+    height: 64px;
+    border: 2px solid;
+    font-size: 64px;
+    font-family: "Calculator";
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    background-color: lightgrey;
+}
+
+.button {
+    width: 48px;
+    height: 48px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+.button:active {
+    background-color: darkgrey;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.square-root {
+    font-size: 30px;
+}
+
+.clear, .delete {
+    background-color: pink;
+    background-color: #0074D9;
+    color: white;
+    border-color: black;
+}
